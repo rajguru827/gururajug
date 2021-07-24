@@ -4,206 +4,160 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Gururaj</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
       </Head>
 
+      <header>
+
+        <nav className="navbar navbar-expand-lg navbar-dark bg-black pt-5 pb-5">
+          <div className="container">
+            <a className="navbar-brand" href="#">
+              <img width="50" src="https://mattfarley.ca/img/mf-logo.svg" />
+            </a>
+
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Work</a>
+                </li>
+                <li className="nav-item">
+                  <button type="button" className="btn btn-outline-success ml-sm-2">Say Hello</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <section className="hero pt-5">
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-12">
+                <h1 className="title">Front-end Developer </h1>
+                <h2 className="sub-title mt-3">I design and code beautifully simple things, and I love what I do.</h2>
+                <img className="avatar mt-5 mb-5" src="https://mattfarley.ca/img/mf-avatar.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <section className="primary">
+          <div className="container text-center">
+            <h1 className="title">Hi, I’m Gururaj. Nice to meet you.</h1>
+            <p className="text-white mt-3">Since beginning my journey as a web designer nearly 4 years ago, I've done work for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+          </div>
+        </section>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section className="exp pt-5">
+          <div className="container">
+            <h1 className="title">Experience</h1>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <div className="rowm mt-5 text-center">
+              <div className="col-md-12">
+                <div className="job">
+                  <h4 className="text-white">Infosys Ltd. (Dec, 2018 - Present)</h4>
+                  <h5 className="text-white">Senior System Engineer</h5>
+                </div>
+                <div className="job mt-5">
+                  <h4 className="text-white">Dharani Info Technologies Pvt.Ltd. (April, 2016 - Nov 2018)</h4>
+                  <h5 className="text-white">UI Developer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className="skills pt-5">
+          <div className="container">
+            <h1 className="title">Skills</h1>
+            <div className="row pt-4">
+              <div className="col-md-12">
+                <ul className="skills">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>AngularJS</li>
+                  <li>Angular</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
+
       </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
       <style jsx global>{`
-        html,
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
         body {
+          background-color: black;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .hero .title {
+          color: #ffd330;
+        }
+        .sub-title {
+          font-weight: 400;
+          font-size: 1.5rem;
+          color: #ff85a2;
+        }
+        .primary .title {
+          color: white;
+          font-size: 2rem;
+        }
+        
+        section .title {
+          color: #91c13e;
+          text-align:center;
+          position: relative;
+        }
+        section .title::after {
+          content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            width: 65px;
+            height: 5px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        
+        ul.skills {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          list-style-type: none;
           padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
         }
-
-        * {
-          box-sizing: border-box;
+        
+        ul.skills li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          background-color: #ee3e34;
+          padding: 20px;
+          border-radius: 50%;
+          height: 150px;
+          width: 150px;
+          margin-left: 10px;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   )
 }
